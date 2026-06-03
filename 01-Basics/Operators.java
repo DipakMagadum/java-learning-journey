@@ -16,8 +16,11 @@ public class Operators {
         System.out.println(a < b);
 
         // Logical Operators
-        System.out.println(true && false);
-        System.out.println(true || false);
+        boolean first = true;
+        boolean second = false;
+
+        System.out.println(first && second);
+        System.out.println(first || second);
 
         // Increment Operator
         a++;
