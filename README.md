@@ -72,3 +72,49 @@ This repository is updated regularly with:
 * structured topic-wise learning
 
 More Java topics and projects will be added as I continue learning.
+
+# 03 - Methods
+
+This folder contains examples of Java methods and their usage.
+
+## Topics Covered
+
+- Method Creation
+- Method Calling
+- Return Types
+- Method Parameters
+- Method Overloading
+- Static Methods
+- Instance Methods
+- Recursion
+- Fibonacci Series
+- Palindrome Number
+- Simple Interest Calculation
+
+## Files
+
+- MethodDemo.java
+- ReturnTypeMethod.java
+- MethodParameters.java
+- GreetingMethod.java
+- CalculatorMethods.java
+- MethodOverloading.java
+- StaticMethod.java
+- InstanceMethod.java
+- EvenOddMethod.java
+- MaximumMethod.java
+- SquareMethod.java
+- SimpleInterestMethod.java
+- RecursiveFactorial.java
+- FibonacciMethod.java
+- NumberPalindromeMethod.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+- How to create methods
+- How to pass parameters
+- How return values work
+- Method overloading
+- Static vs Instance methods
+- Basic recursion concepts
