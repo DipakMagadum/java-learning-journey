@@ -118,3 +118,42 @@ After completing this section, I learned:
 - Method overloading
 - Static vs Instance methods
 - Basic recursion concepts
+# 04 - Arrays
+
+This section contains basic array programs written while learning Java.
+
+## Topics Covered
+
+- Array Declaration and Initialization
+- Taking Input in Arrays
+- Sum of Array Elements
+- Average of Array Elements
+- Maximum Element
+- Minimum Element
+- Reverse Array
+- Linear Search
+- Copy Array
+- Second Largest Element
+
+## Files
+
+- ArrayDemo.java
+- ArrayInput.java
+- ArraySum.java
+- ArrayAverage.java
+- FindMaximum.java
+- FindMinimum.java
+- ReverseArray.java
+- LinearSearch.java
+- CopyArray.java
+- SecondLargest.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How arrays store multiple values
+- How to access array elements using indexes
+- How to iterate through arrays using loops
+- Basic searching techniques
+- Basic array-based problem solving
