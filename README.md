@@ -157,3 +157,44 @@ After completing this section, I learned:
 - How to iterate through arrays using loops
 - Basic searching techniques
 - Basic array-based problem solving
+
+# 05 - Strings
+
+This section contains basic string programs and commonly used string operations in Java.
+
+## Topics Covered
+
+- String Creation
+- String Length
+- String Concatenation
+- String Comparison
+- Common String Methods
+- Reverse String
+- Palindrome String
+- Count Vowels
+- Remove Spaces
+- Character Frequency
+
+## Files
+
+- StringDemo.java
+- StringLength.java
+- StringConcatenation.java
+- StringComparison.java
+- StringMethods.java
+- ReverseString.java
+- PalindromeString.java
+- CountVowels.java
+- RemoveSpaces.java
+- CharacterFrequency.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How to create and use strings
+- String comparison using equals()
+- Frequently used string methods
+- String traversal using loops
+- Basic string-based problem solving
+- Palindrome and character counting logic
