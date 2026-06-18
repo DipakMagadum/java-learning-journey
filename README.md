@@ -198,3 +198,46 @@ After completing this section, I learned:
 - String traversal using loops
 - Basic string-based problem solving
 - Palindrome and character counting logic
+
+# 06 - Object Oriented Programming (OOP)
+
+This section contains basic Object-Oriented Programming concepts in Java with simple examples.
+
+## Topics Covered
+
+- Class and Object
+- Constructors
+- Parameterized Constructor
+- Inheritance
+- Method Overriding
+- Encapsulation
+- Abstraction
+- Interface
+- Polymorphism
+- Super Keyword
+
+## Files
+
+- ClassAndObject.java
+- ConstructorDemo.java
+- ParameterizedConstructor.java
+- InheritanceDemo.java
+- MethodOverriding.java
+- EncapsulationDemo.java
+- AbstractionDemo.java
+- InterfaceDemo.java
+- PolymorphismDemo.java
+- SuperKeywordDemo.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How to create classes and objects
+- How constructors work
+- How inheritance helps in code reuse
+- Method overriding and runtime behavior
+- Data hiding using encapsulation
+- Abstract classes and interfaces
+- Basic polymorphism concepts
+- Usage of the super keyword
