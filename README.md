@@ -241,3 +241,42 @@ After completing this section, I learned:
 - Abstract classes and interfaces
 - Basic polymorphism concepts
 - Usage of the super keyword
+
+# 07 - Collections Framework
+
+This section contains examples of commonly used Java Collection classes.
+
+## Topics Covered
+
+- ArrayList
+- LinkedList
+- HashSet
+- TreeSet
+- HashMap
+- Iterating Collections
+- Storing Student Data
+- Removing Elements
+- Sorting Collections
+
+## Files
+
+- ArrayListDemo.java
+- LinkedListDemo.java
+- HashSetDemo.java
+- TreeSetDemo.java
+- HashMapDemo.java
+- IterateArrayList.java
+- StudentArrayList.java
+- RemoveElement.java
+- SortArrayList.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How to store dynamic data using collections
+- Difference between List, Set and Map
+- How to iterate through collections
+- How to add and remove elements
+- How to sort collection data
+- Basic usage of Java Collections Framework
