@@ -280,3 +280,41 @@ After completing this section, I learned:
 - How to add and remove elements
 - How to sort collection data
 - Basic usage of Java Collections Framework
+# 08 - Exception Handling
+
+This section contains examples of exception handling in Java.
+
+## Topics Covered
+
+- Try Catch Block
+- Multiple Catch Blocks
+- Finally Block
+- Arithmetic Exception
+- Array Index Exception
+- Number Format Exception
+- throw Keyword
+- throws Keyword
+- Custom Exception
+
+## Files
+
+- TryCatchDemo.java
+- MultipleCatchDemo.java
+- FinallyBlockDemo.java
+- ArithmeticExceptionDemo.java
+- ArrayIndexExceptionDemo.java
+- NumberFormatExceptionDemo.java
+- ThrowDemo.java
+- ThrowsDemo.java
+- CustomExceptionDemo.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How to handle runtime errors
+- Usage of try-catch blocks
+- Difference between throw and throws
+- How finally block works
+- How to create custom exceptions
+- Writing safer and more reliable Java programs
