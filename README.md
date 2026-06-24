@@ -318,3 +318,33 @@ After completing this section, I learned:
 - How finally block works
 - How to create custom exceptions
 - Writing safer and more reliable Java programs
+# 09 - File Handling
+
+This section contains examples of file handling operations in Java.
+
+## Topics Covered
+
+- Creating a File
+- Writing Data to a File
+- Reading Data from a File
+- Checking File Existence
+- Deleting a File
+
+## Files
+
+- CreateFileDemo.java
+- WriteFileDemo.java
+- ReadFileDemo.java
+- FileExistsDemo.java
+- DeleteFileDemo.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How to create files using Java
+- How to write data into files
+- How to read file contents
+- How to check whether a file exists
+- How to delete files programmatically
+- Basic exception handling while working with files
