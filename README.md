@@ -348,3 +348,40 @@ After completing this section, I learned:
 - How to check whether a file exists
 - How to delete files programmatically
 - Basic exception handling while working with files
+# 10 - Java 8 Features
+
+This section contains examples of important Java 8 features that are widely used in modern Java applications.
+
+## Topics Covered
+
+- Lambda Expressions
+- Functional Interfaces
+- Method References
+- Stream API
+- Optional Class
+- forEach Method
+- Predicate Interface
+
+## Files
+
+- LambdaExpressionDemo.java
+- FunctionalInterfaceDemo.java
+- MethodReferenceDemo.java
+- StreamFilterDemo.java
+- StreamMapDemo.java
+- StreamCountDemo.java
+- OptionalDemo.java
+- ForEachDemo.java
+- PredicateDemo.java
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How to write lambda expressions
+- How functional interfaces work
+- How to use method references
+- Basic operations using Stream API
+- How Optional helps in null handling
+- Using forEach to iterate collections
+- Using Predicate for conditional checks
