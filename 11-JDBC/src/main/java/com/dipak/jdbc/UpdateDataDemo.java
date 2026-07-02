@@ -1,23 +1,21 @@
+package com.dipak.jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class CreateTableDemo {
+public class UpdateDataDemo {
 
     public static void main(String[] args) {
 
         String url = "jdbc:mysql://localhost:3306/student_db";
         String username = "root";
-        String password = "root";
+        String password = "12345678";
 
         String query = """
-                CREATE TABLE IF NOT EXISTS students (
-                    id INT PRIMARY KEY AUTO_INCREMENT,
-                    name VARCHAR(50),
-                    course VARCHAR(50),
-                    marks INT
-                )
+                UPDATE students
+                SET marks = 90
+                WHERE name = 'Dipak'
                 """;
 
         try {
@@ -30,16 +28,20 @@ public class CreateTableDemo {
 
             Statement statement = connection.createStatement();
 
-            statement.executeUpdate(query);
+            int rowsUpdated = statement.executeUpdate(query);
 
-            System.out.println("Table created successfully.");
+            if (rowsUpdated > 0) {
+                System.out.println("Student record updated successfully.");
+            } else {
+                System.out.println("Student not found.");
+            }
 
             statement.close();
             connection.close();
 
         } catch (SQLException e) {
 
-            System.out.println("Unable to create table.");
+            System.out.println("Unable to update student record.");
             System.out.println(e.getMessage());
         }
     }

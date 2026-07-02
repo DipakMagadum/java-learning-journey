@@ -1,3 +1,4 @@
+package com.dipak.jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,7 +11,7 @@ public class SelectDataDemo {
 
         String url = "jdbc:mysql://localhost:3306/student_db";
         String username = "root";
-        String password = "root";
+        String password = "12345678";
 
         String query = "SELECT * FROM students";
 
