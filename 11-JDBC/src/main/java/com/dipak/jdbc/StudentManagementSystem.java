@@ -22,34 +22,38 @@ public class StudentManagementSystem {
 
         do {
 
-            System.out.println("\n===== Student Management System =====");
-            System.out.println("1. Add Student");
-            System.out.println("2. View Students");
-            System.out.println("3. Exit");
-            System.out.print("Enter your choice: ");
+          System.out.println("\n===== Student Management System =====");
+System.out.println("1. Add Student");
+System.out.println("2. View Students");
+System.out.println("3. Update Student");
+System.out.println("4. Exit");
+System.out.print("Enter your choice: ");
 
             choice = scanner.nextInt();
             scanner.nextLine();
 
-            switch (choice) {
+           switch (choice) {
 
-                case 1:
-                    addStudent();
-                    break;
+    case 1:
+        addStudent();
+        break;
 
-                case 2:
-                    viewStudents();
-                    break;
+    case 2:
+        viewStudents();
+        break;
 
-                case 3:
-                    System.out.println("Thank you!");
-                    break;
+    case 3:
+        updateStudent();
+        break;
 
-                default:
-                    System.out.println("Invalid choice.");
-            }
+    case 4:
+        System.out.println("Thank you!");
+        break;
 
-        } while (choice != 3);
+    default:
+        System.out.println("Invalid choice.");
+}
+        } while (choice != 4);
 
     }
 
@@ -123,8 +127,10 @@ public class StudentManagementSystem {
                                 + " | "
                                 + resultSet.getInt("marks")
                 );
+                
 
             }
+            
 
             resultSet.close();
             preparedStatement.close();
@@ -137,5 +143,46 @@ public class StudentManagementSystem {
         }
 
     }
+    static void updateStudent() {
+
+    System.out.print("Enter Student ID: ");
+    int id = scanner.nextInt();
+
+    System.out.print("Enter New Marks: ");
+    int marks = scanner.nextInt();
+    scanner.nextLine();
+
+    String query =
+            "UPDATE students SET marks = ? WHERE id = ?";
+
+    try {
+
+        Connection connection =
+                DriverManager.getConnection(URL, USERNAME, PASSWORD);
+
+        PreparedStatement preparedStatement =
+                connection.prepareStatement(query);
+
+        preparedStatement.setInt(1, marks);
+        preparedStatement.setInt(2, id);
+
+        int rowsUpdated = preparedStatement.executeUpdate();
+
+        if (rowsUpdated > 0) {
+            System.out.println("Student updated successfully.");
+        } else {
+            System.out.println("Student not found.");
+        }
+
+        preparedStatement.close();
+        connection.close();
+
+    } catch (SQLException e) {
+
+        System.out.println(e.getMessage());
+
+    }
+
+}
 
 }
