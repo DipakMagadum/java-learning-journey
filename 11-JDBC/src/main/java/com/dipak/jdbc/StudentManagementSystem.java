@@ -26,13 +26,13 @@ public class StudentManagementSystem {
 System.out.println("1. Add Student");
 System.out.println("2. View Students");
 System.out.println("3. Update Student");
-System.out.println("4. Exit");
+System.out.println("4. Delete Student");
+System.out.println("5. Exit");
 System.out.print("Enter your choice: ");
-
             choice = scanner.nextInt();
             scanner.nextLine();
 
-           switch (choice) {
+          switch (choice) {
 
     case 1:
         addStudent();
@@ -47,13 +47,17 @@ System.out.print("Enter your choice: ");
         break;
 
     case 4:
+        deleteStudent();
+        break;
+
+    case 5:
         System.out.println("Thank you!");
         break;
 
     default:
         System.out.println("Invalid choice.");
 }
-        } while (choice != 4);
+       } while (choice != 5);
 
     }
 
@@ -184,5 +188,41 @@ System.out.print("Enter your choice: ");
     }
 
 }
+static void deleteStudent() {
 
+    System.out.print("Enter Student ID to delete: ");
+    int id = scanner.nextInt();
+    scanner.nextLine();
+
+    String query = "DELETE FROM students WHERE id = ?";
+
+    try {
+
+        Connection connection =
+                DriverManager.getConnection(URL, USERNAME, PASSWORD);
+
+        PreparedStatement preparedStatement =
+                connection.prepareStatement(query);
+
+        preparedStatement.setInt(1, id);
+
+        int rowsDeleted = preparedStatement.executeUpdate();
+
+        if (rowsDeleted > 0) {
+            System.out.println("Student deleted successfully.");
+        } else {
+            System.out.println("No student found with this ID.");
+        }
+
+        preparedStatement.close();
+        connection.close();
+
+    } catch (SQLException e) {
+
+        System.out.println("Unable to delete student.");
+        System.out.println(e.getMessage());
+
+    }
+
+}
 }
