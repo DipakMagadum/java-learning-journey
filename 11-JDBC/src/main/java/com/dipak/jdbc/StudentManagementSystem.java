@@ -21,13 +21,13 @@ public class StudentManagementSystem {
         int choice;
 
         do {
-
-          System.out.println("\n===== Student Management System =====");
+System.out.println("\n===== Student Management System =====");
 System.out.println("1. Add Student");
 System.out.println("2. View Students");
 System.out.println("3. Update Student");
 System.out.println("4. Delete Student");
-System.out.println("5. Exit");
+System.out.println("5. Search Student");
+System.out.println("6. Exit");
 System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
             scanner.nextLine();
@@ -51,13 +51,17 @@ System.out.print("Enter your choice: ");
         break;
 
     case 5:
+        searchStudent();
+        break;
+
+    case 6:
         System.out.println("Thank you!");
         break;
 
     default:
         System.out.println("Invalid choice.");
 }
-       } while (choice != 5);
+       } while (choice != 6);
 
     }
 
@@ -220,6 +224,53 @@ static void deleteStudent() {
     } catch (SQLException e) {
 
         System.out.println("Unable to delete student.");
+        System.out.println(e.getMessage());
+
+    }
+
+}
+static void searchStudent() {
+
+    System.out.print("Enter Student ID: ");
+    int id = scanner.nextInt();
+    scanner.nextLine();
+
+    String query = "SELECT * FROM students WHERE id = ?";
+
+    try {
+
+        Connection connection =
+                DriverManager.getConnection(URL, USERNAME, PASSWORD);
+
+        PreparedStatement preparedStatement =
+                connection.prepareStatement(query);
+
+        preparedStatement.setInt(1, id);
+
+        ResultSet resultSet =
+                preparedStatement.executeQuery();
+
+        if (resultSet.next()) {
+
+            System.out.println("\nStudent Details");
+            System.out.println("--------------------------");
+            System.out.println("ID      : " + resultSet.getInt("id"));
+            System.out.println("Name    : " + resultSet.getString("name"));
+            System.out.println("Course  : " + resultSet.getString("course"));
+            System.out.println("Marks   : " + resultSet.getInt("marks"));
+
+        } else {
+
+            System.out.println("Student not found.");
+
+        }
+
+        resultSet.close();
+        preparedStatement.close();
+        connection.close();
+
+    } catch (SQLException e) {
+
         System.out.println(e.getMessage());
 
     }
