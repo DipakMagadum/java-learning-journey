@@ -385,3 +385,83 @@ After completing this section, I learned:
 - How Optional helps in null handling
 - Using forEach to iterate collections
 - Using Predicate for conditional checks
+# 11 - JDBC (Java Database Connectivity)
+
+This section contains beginner-friendly examples to learn how Java connects with a MySQL database using JDBC.
+
+## Prerequisites
+
+- Java 17
+- MySQL Server
+- MySQL Workbench
+- Maven
+- MySQL Connector/J
+
+## Database Used
+
+Database Name:
+
+```sql
+student_db
+```
+
+Table:
+
+```sql
+students
+```
+
+## Topics Covered
+
+- Database Connection
+- Create Table
+- Insert Record
+- Retrieve Records
+- Update Record
+- Delete Record
+- PreparedStatement
+- Mini Student Management System
+
+## Project Structure
+
+```
+11-JDBC/
+│
+├── pom.xml
+├── README.md
+└── src
+    └── main
+        └── java
+            └── com
+                └── dipak
+                    └── jdbc
+                        ├── DatabaseConnectionDemo.java
+                        ├── CreateTableDemo.java
+                        ├── InsertDataDemo.java
+                        ├── SelectDataDemo.java
+                        ├── UpdateDataDemo.java
+                        ├── DeleteDataDemo.java
+                        ├── PreparedStatementDemo.java
+                        └── StudentManagementSystem.java
+```
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- How JDBC works
+- Connecting Java with MySQL
+- Executing SQL queries
+- CRUD Operations
+- Using Statement
+- Using PreparedStatement
+- Handling SQL Exceptions
+- Building a simple console-based CRUD application
+- Organizing a Maven project
+
+## Technologies Used
+
+- Java 17
+- JDBC
+- MySQL
+- Maven
