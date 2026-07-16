@@ -465,3 +465,62 @@ After completing this section, I learned:
 - JDBC
 - MySQL
 - Maven
+
+# 12 - Multithreading
+
+This section contains beginner-friendly examples to understand how multiple threads work in Java and how they communicate with each other.
+
+## Topics Covered
+
+- Creating a Thread
+- Runnable Interface
+- Thread Sleep
+- Thread Join
+- Thread Priority
+- Thread Synchronization
+- Inter-Thread Communication
+- Producer Consumer Problem
+
+## Files
+
+- ThreadCreationDemo.java
+- ThreadUsingRunnable.java
+- ThreadSleepDemo.java
+- ThreadJoinDemo.java
+- ThreadPriorityDemo.java
+- SynchronizationDemo.java
+- InterThreadCommunicationDemo.java
+- ProducerConsumerDemo.java
+
+## Real-Life Examples Used
+
+- Learning Progress
+- File Download
+- Countdown Timer
+- Ticket Booking
+- Bank Account
+- Restaurant Order System
+- Warehouse Inventory
+
+## Interview Concepts
+
+- Thread vs Runnable
+- Thread Lifecycle
+- Thread Priority
+- Synchronization
+- Race Condition
+- wait() and notify()
+- Producer Consumer Problem
+
+## Learning Outcome
+
+After completing this section, I learned:
+
+- Creating threads using different approaches
+- Managing thread execution
+- Pausing and waiting for threads
+- Setting thread priorities
+- Synchronizing shared resources
+- Communication between threads
+- Solving the Producer Consumer problem
+- Writing thread-safe Java programs
