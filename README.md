@@ -524,3 +524,108 @@ After completing this section, I learned:
 - Communication between threads
 - Solving the Producer Consumer problem
 - Writing thread-safe Java programs
+
+# 13 - Data Structures and Algorithms (DSA)
+
+This section contains beginner-friendly implementations of fundamental Data Structures and Algorithms in Java. Each example focuses on understanding the core concept with practical real-world scenarios.
+
+## 📚 Topics Covered
+
+### Searching Algorithms
+
+- Linear Search
+- Binary Search
+
+### Sorting Algorithms
+
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+
+### Data Structures
+
+- Stack
+- Queue
+- LinkedList
+
+---
+
+## 📂 Files
+
+| File | Description |
+|------|-------------|
+| LinearSearch.java | Search an element using Linear Search |
+| BinarySearch.java | Search an element using Binary Search |
+| BubbleSort.java | Sort elements using Bubble Sort |
+| SelectionSort.java | Sort elements using Selection Sort |
+| InsertionSort.java | Sort elements using Insertion Sort |
+| StackDemo.java | Stack operations using Undo example |
+| QueueDemo.java | Queue operations using Bank Token System |
+| LinkedListDemo.java | LinkedList operations using Music Playlist |
+
+---
+
+## ⏱️ Time Complexity Summary
+
+| Algorithm / Data Structure | Best | Average | Worst |
+|----------------------------|------|----------|-------|
+| Linear Search | O(1) | O(n) | O(n) |
+| Binary Search | O(1) | O(log n) | O(log n) |
+| Bubble Sort | O(n) | O(n²) | O(n²) |
+| Selection Sort | O(n²) | O(n²) | O(n²) |
+| Insertion Sort | O(n) | O(n²) | O(n²) |
+| Stack Push / Pop | O(1) | O(1) | O(1) |
+| Queue Offer / Poll | O(1) | O(1) | O(1) |
+| LinkedList Add First / Last | O(1) | O(1) | O(1) |
+
+---
+
+## 🌍 Real-Life Examples Used
+
+- Student Marks Search
+- Employee ID Search
+- Student Marks Sorting
+- Product Price Sorting
+- Playing Cards
+- Text Editor Undo
+- Bank Token System
+- Music Playlist
+
+---
+
+## 🎯 Interview Concepts
+
+- Linear Search vs Binary Search
+- Bubble Sort vs Selection Sort vs Insertion Sort
+- Time Complexity
+- Stable vs Unstable Sorting
+- Stack (LIFO)
+- Queue (FIFO)
+- LinkedList vs ArrayList
+
+---
+
+## 🚀 Learning Outcome
+
+After completing this section, I learned:
+
+- Searching techniques
+- Basic sorting algorithms
+- Time complexity analysis
+- Stack operations
+- Queue operations
+- LinkedList operations
+- Java Collections basics
+- Choosing the right data structure for different scenarios
+
+---
+
+## 🛠️ Technologies Used
+
+- Java
+- Java Collections Framework
+- VS Code
+- Git
+- GitHub
+
+---
