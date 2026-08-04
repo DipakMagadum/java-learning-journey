@@ -629,3 +629,131 @@ After completing this section, I learned:
 - GitHub
 
 ---
+# 14 - Advanced Data Structures and Algorithms
+
+This section contains advanced Data Structures and Algorithms implemented in Java. These examples focus on interview preparation, problem-solving techniques, and commonly asked coding interview concepts.
+
+---
+
+# 📚 Topics Covered
+
+## Recursion
+
+- Recursive Function
+- Base Case
+- Recursive Calls
+
+## Advanced Sorting
+
+- Merge Sort
+- Quick Sort
+
+## Hashing
+
+- HashMap
+- HashSet
+
+## Trees
+
+- Binary Tree Traversals
+- Binary Search Tree
+
+## Queue
+
+- Priority Queue
+
+## Graph
+
+- Breadth First Search (BFS)
+- Depth First Search (DFS)
+
+---
+
+# 📂 Files
+
+| File | Description |
+|------|-------------|
+| RecursionDemo.java | Basic recursion using countdown example |
+| MergeSort.java | Merge Sort using Divide and Conquer |
+| QuickSort.java | Quick Sort using Pivot and Partition |
+| HashMapDemo.java | HashMap operations |
+| HashSetDemo.java | HashSet operations |
+| TreeTraversalDemo.java | Preorder, Inorder and Postorder Traversals |
+| BinarySearchTreeDemo.java | BST Insert, Search and Traversal |
+| PriorityQueueDemo.java | Priority Queue operations |
+| BFSDemo.java | Breadth First Search |
+| DFSDemo.java | Depth First Search |
+
+---
+
+# 🌍 Real-Life Examples Used
+
+- Rocket Launch Countdown
+- Student Marks Sorting
+- Product Price Sorting
+- Student Result Management
+- Employee Access System
+- Company Organization Hierarchy
+- Student Record Search
+- Hospital Emergency Queue
+- Office Employee Network
+
+---
+
+# ⏱️ Time Complexity Summary
+
+| Algorithm | Complexity |
+|------------|------------|
+| Merge Sort | O(n log n) |
+| Quick Sort | Average O(n log n), Worst O(n²) |
+| HashMap | O(1) Average |
+| HashSet | O(1) Average |
+| BST Search | O(log n) Average |
+| Priority Queue Offer/Poll | O(log n) |
+| BFS | O(V + E) |
+| DFS | O(V + E) |
+
+---
+
+# 🎯 Interview Concepts
+
+- Recursion
+- Divide and Conquer
+- Pivot Technique
+- Merge Process
+- Hashing
+- Binary Tree
+- Binary Search Tree
+- Graph Traversal
+- BFS vs DFS
+- Priority Queue
+- Time Complexity Analysis
+
+---
+
+# 🚀 Learning Outcome
+
+After completing this section, I learned:
+
+- Recursive programming
+- Efficient sorting algorithms
+- Hash-based collections
+- Tree data structures
+- Binary Search Tree operations
+- Priority Queue implementation
+- Graph traversal techniques
+- Interview-oriented problem solving
+
+---
+
+# 🛠️ Technologies Used
+
+- Java
+- Java Collections Framework
+- VS Code
+- Git
+- GitHub
+
+---
+
+Happy Coding! 🚀
